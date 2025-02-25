@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
 
 	private List<String> list  = new ArrayList<>();
-	
-    static final String DB_URL = "jdbc:mysql://localhost:3306/docker";
+	static final String DB = "docker";	
+    static final String DB_URL = "jdbc:mysql://localhost:3306/" + DB;
     static final String USER = "root";
     static final String PASS = "root";
 
